@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 async function getUserData() {
-  await new Promise((r)=>setTimeout(r,5000));
+  // await new Promise((r)=>setTimeout(r,5000));
   const response = await axios.get("https://week-13-offline.kirattechnologies.workers.dev/api/v1/user/details")
 	return response.data;
 }
